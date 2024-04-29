@@ -13,6 +13,7 @@ public class PersonnelRowMapper implements RowMapper<PersonnelDto> {
 	public PersonnelDto mapRow(ResultSet rs, int rowNum) throws SQLException {
 		PersonnelDto entity = new PersonnelDto();
 		entity.setId(rs.getLong("id"));
+		entity.setName(rs.getString("name"));
 		entity.setUserId(rs.getString("user_id"));
 		entity.setCardNoId(rs.getString("card_no_id"));
 		entity.setFaceId(rs.getString("face_id"));

@@ -35,11 +35,12 @@ public class ScheduledTasks {
 
 	@Scheduled(cron = "1 * * * * *")
 	public void performOperationWithMSSQL() {
-		log.info("===== START Perform Data Sync =====");
+		log.info("===== START Perform Data Synchronizing =====");
 
 		superNapService.performDataSyncOperation();
 
-		log.info("===== END Perform Data Sync =====");
+		log.info("===== END Perform Data Synchronizing =====");
+		System.out.println("");
 	}
 
 }

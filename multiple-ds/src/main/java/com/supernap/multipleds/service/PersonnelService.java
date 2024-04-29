@@ -25,7 +25,7 @@ public class PersonnelService {
 
 	private final RestTemplate restTemplate;
 
-	private final String deviceIp = "http://192.168.1.50:8090";
+	private final String deviceIp = "http://192.168.1.156:8090";
 
 	private final String pass = "admin$2024";
 
@@ -47,7 +47,8 @@ public class PersonnelService {
 
 				MultiValueMap<String, String> map = new LinkedMultiValueMap<String, String>();
 				map.add("pass", pass);
-				map.add("person", "{\"id\":\"" + p.getUserId() + "\",\"name\":\"" + p.getName() + "\",\"idcardNum\":\""
+				map.add("person", "{\"id\":\"" + p.getUserId()
+						+ "\",\"name\":\"" + p.getName() + "\",\"idcardNum\":\""
 						+ p.getCardNoId() + "\",\"facePermission\":" + (p.getType().equals(1) ? 2 : 1)
 						+ ",\"idCardPermission\":" + (p.getType().equals(2) ? 2 : 1) + ","
 						+ "\"faceAndCardPermission\":" + (p.getType().equals(3) ? 2 : 1)
@@ -60,11 +61,14 @@ public class PersonnelService {
 					map.add("face1", "{\"faceId\":\"" + p.getUserId() + "\",\"base64\":\"" + p.getFaceId() + "\"}");
 				}
 
+				LOG.info("Create API request: " + map.toString());
+				LOG.info("Invoking face scanner terminal...");
+
 				HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
 				PersonnelResponse response = restTemplate.postForObject(url, request, PersonnelResponse.class);
-				LOG.info("Create response: " + response);
+				LOG.info("Create API response: " + response);
 
-				if(response != null && response.getSuccess()) {
+				if (response != null && response.getSuccess()) {
 					p.setDataSynced(1);
 				}
 			}
