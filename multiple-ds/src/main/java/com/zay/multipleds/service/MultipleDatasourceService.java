@@ -1,4 +1,4 @@
-package com.supernap.multipleds.service;
+package com.zay.multipleds.service;
 
 import javax.sql.DataSource;
 
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import com.supernap.multipleds.scheduler.ScheduledTasks;
+import com.zay.multipleds.scheduler.ScheduledTasks;
 
 @Service
 public class MultipleDatasourceService {

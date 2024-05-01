@@ -1,4 +1,4 @@
-package com.supernap.multiple.datasource;
+package com.zay.multiple.datasource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

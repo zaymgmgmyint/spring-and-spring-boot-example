@@ -1,4 +1,4 @@
-package com.supernap.multipleds.scheduler;
+package com.zay.multipleds.scheduler;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.supernap.multipleds.service.MultipleDatasourceService;
+import com.zay.multipleds.service.MultipleDatasourceService;
 
 @Component
 public class ScheduledTasks {

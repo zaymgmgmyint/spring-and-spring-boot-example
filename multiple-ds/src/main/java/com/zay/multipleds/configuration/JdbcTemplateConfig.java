@@ -1,4 +1,4 @@
-package com.supernap.multipleds.configuration;
+package com.zay.multipleds.configuration;
 
 import javax.sql.DataSource;
 

@@ -9,8 +9,8 @@
 		<version>3.2.5</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.supernap</groupId>
-	<artifactId>multiple-ds</artifactId>
+	<groupId>com.zay</groupId>
+	<artifactId>multiple-data-source</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>multiple-ds</name>
 	<description>Multiple Datasource using the new JDBC Client</description>

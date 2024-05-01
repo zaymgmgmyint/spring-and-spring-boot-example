@@ -1,9 +1,9 @@
-package com.supernap.multiple.data.source;
+package com.zay.multiple.data.source;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.TestConfiguration;
 
-import com.supernap.multiple.datasource.MultipleDataSourceApplication;
+import com.zay.multiple.datasource.MultipleDataSourceApplication;
 
 @TestConfiguration(proxyBeanMethods = false)
 public class TestMultipleDsApplication {
