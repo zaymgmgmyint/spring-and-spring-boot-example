@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import com.supernap.multipleds.service.SuperNapService;
+import com.supernap.multipleds.service.MultipleDatasourceService;
 
 @Component
 public class ScheduledTasks {
@@ -19,27 +19,27 @@ public class ScheduledTasks {
 	private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
 	@Autowired
-	private SuperNapService superNapService;
+	private MultipleDatasourceService dataSourceService;
 
-//	@Scheduled(cron = "* * * * * *")
+	@Scheduled(cron = "* * * * * *")
 	public void reportCurrentTime() {
 		log.info("The time is now {}", dateFormat.format(new Date()));
 	}
 
-//	@Scheduled(cron = "1 * * * * *")
+	@Scheduled(cron = "5 * * * * *")
 	public void performOperationWithMySQL() {
 		log.info("=== Perform MySQL ===");
 
-		superNapService.performOperationWithMySQL();
+		dataSourceService.performOperationWithMySQL();
 	}
 
-	@Scheduled(cron = "1 * * * * *")
+	@Scheduled(cron = "10 * * * * *")
 	public void performOperationWithMSSQL() {
-		log.info("===== START Perform Data Synchronizing =====");
+		log.info("===== START Perform MSSQL =====");
 
-		superNapService.performDataSyncOperation();
+		dataSourceService.performOperationWithMSSQL();
 
-		log.info("===== END Perform Data Synchronizing =====");
+		log.info("===== END Perform MSSQL =====");
 		System.out.println("");
 	}
 
