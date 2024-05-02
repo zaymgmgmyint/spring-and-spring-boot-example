@@ -1,4 +1,4 @@
-package dev.zay.multipleds.configuration;
+package dev.zay.multiple.datasource.configuration;
 
 import javax.sql.DataSource;
 

@@ -1,4 +1,4 @@
-package dev.zay.multiple.data.source;
+package dev.zay.multiple.datasource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

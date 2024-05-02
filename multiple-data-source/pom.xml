@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dev.zay</groupId>
-	<artifactId>multiple-data-source</artifactId>
+	<artifactId>multiple.datasource</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>multiple-ds</name>
+	<name>multiple.datasource</name>
 	<description>Multiple Datasource using the new JDBC Client</description>
 	<properties>
 		<java.version>17</java.version>

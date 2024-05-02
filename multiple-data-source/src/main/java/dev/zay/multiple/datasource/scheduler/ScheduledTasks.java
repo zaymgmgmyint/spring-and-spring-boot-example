@@ -1,4 +1,4 @@
-package dev.zay.multipleds.scheduler;
+package dev.zay.multiple.datasource.scheduler;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import dev.zay.multipleds.service.MultipleDatasourceService;
+import dev.zay.multiple.datasource.service.MultipleDatasourceService;
 
 @Component
 public class ScheduledTasks {
