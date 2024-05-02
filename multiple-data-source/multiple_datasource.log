@@ -1,18 +1,18 @@
-2024-05-02 00:17:06 [restartedMain] INFO  c.s.m.d.MultipleDataSourceApplication - Starting MultipleDataSourceApplication using Java 17.0.8.1 with PID 47299 (/Users/zaymaungmaungmyint/zay/Git/master-spring-and-spring-boot/multiple-ds/target/classes started by zaymaungmaungmyint in /Users/zaymaungmaungmyint/zay/Git/master-spring-and-spring-boot/multiple-ds)
-2024-05-02 00:17:06 [restartedMain] INFO  c.s.m.d.MultipleDataSourceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-05-02 00:17:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-05-02 00:17:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-05-02 00:17:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-05-02 00:17:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
-2024-05-02 00:17:09 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
-2024-05-02 00:17:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-05-02 00:17:09 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2024-05-02 23:15:49 [restartedMain] INFO  d.z.m.d.MultipleDataSourceApplication - Starting MultipleDataSourceApplication using Java 17.0.8.1 with PID 53069 (/Users/zaymaungmaungmyint/zay/Git/spring-and-spring-boot-example/multiple-data-source/target/classes started by zaymaungmaungmyint in /Users/zaymaungmaungmyint/zay/Git/spring-and-spring-boot-example/multiple-data-source)
+2024-05-02 23:15:49 [restartedMain] INFO  d.z.m.d.MultipleDataSourceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-02 23:15:49 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-02 23:15:49 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-02 23:15:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-02 23:15:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-02 23:15:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-02 23:15:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-02 23:15:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2173 ms
+2024-05-02 23:15:52 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-05-02 23:15:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-02 23:15:52 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-05-02 00:17:09 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-05-02 23:15:52 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
