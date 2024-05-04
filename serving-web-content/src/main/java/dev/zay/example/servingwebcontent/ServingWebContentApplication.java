@@ -1,4 +1,4 @@
-package dec.zay.example.servingwebcontent;
+package dev.zay.example.servingwebcontent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
