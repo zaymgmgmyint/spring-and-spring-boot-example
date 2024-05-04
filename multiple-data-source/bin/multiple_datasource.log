@@ -1,33 +1,107 @@
-2024-05-02 00:17:06 [restartedMain] INFO  c.s.m.d.MultipleDataSourceApplication - Starting MultipleDataSourceApplication using Java 17.0.8.1 with PID 47299 (/Users/zaymaungmaungmyint/zay/Git/master-spring-and-spring-boot/multiple-ds/target/classes started by zaymaungmaungmyint in /Users/zaymaungmaungmyint/zay/Git/master-spring-and-spring-boot/multiple-ds)
-2024-05-02 00:17:06 [restartedMain] INFO  c.s.m.d.MultipleDataSourceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-05-02 00:17:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-05-02 00:17:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-05-02 00:17:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
-2024-05-02 00:17:08 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-05-02 00:17:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
-2024-05-02 00:17:09 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
-2024-05-02 00:17:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2024-05-02 00:17:09 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-05-02 00:17:09 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
-
-Reason: Failed to determine a suitable driver class
-
-
-Action:
-
-Consider the following:
-	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
-	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
-
+2024-05-05 00:23:05 [restartedMain] INFO  d.z.m.d.MultipleDataSourceApplication - Starting MultipleDataSourceApplication using Java 21.0.1 with PID 63717 (/Users/zaymaungmaungmyint/zay/Git/spring-and-spring-boot-example/multiple-data-source/target/classes started by zaymaungmaungmyint in /Users/zaymaungmaungmyint/zay/Git/spring-and-spring-boot-example/multiple-data-source)
+2024-05-05 00:23:05 [restartedMain] INFO  d.z.m.d.MultipleDataSourceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-05 00:23:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-05 00:23:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-05-05 00:23:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-05-05 00:23:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-05 00:23:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-05 00:23:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-05 00:23:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 619 ms
+2024-05-05 00:23:06 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-05 00:23:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-05-05 00:23:06 [restartedMain] INFO  d.z.m.d.MultipleDataSourceApplication - Started MultipleDataSourceApplication in 1.125 seconds (process running for 1.471)
+2024-05-05 00:23:07 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:07
+2024-05-05 00:23:08 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:08
+2024-05-05 00:23:09 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:09
+2024-05-05 00:23:10 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - ===== START Perform MSSQL =====
+2024-05-05 00:23:10 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-05 00:23:11 [scheduling-1] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at dev.zay.multiple.datasource.service.MultipleDatasourceService.performOperationWithMSSQL(MultipleDatasourceService.java:49)
+	at dev.zay.multiple.datasource.scheduler.ScheduledTasks.performOperationWithMSSQL(ScheduledTasks.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-05-05 00:23:11 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:388)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481)
+	at dev.zay.multiple.datasource.service.MultipleDatasourceService.performOperationWithMSSQL(MultipleDatasourceService.java:49)
+	at dev.zay.multiple.datasource.scheduler.ScheduledTasks.performOperationWithMSSQL(ScheduledTasks.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 19 common frames omitted
+2024-05-05 00:23:11 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:11
+2024-05-05 00:23:12 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:12
+2024-05-05 00:23:13 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:13
+2024-05-05 00:23:14 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:14
+2024-05-05 00:23:15 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:15
+2024-05-05 00:23:16 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:16
+2024-05-05 00:23:17 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:17
+2024-05-05 00:23:18 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:18
+2024-05-05 00:23:19 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:19
+2024-05-05 00:23:20 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:20
+2024-05-05 00:23:21 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:21
+2024-05-05 00:23:22 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:22
+2024-05-05 00:23:23 [scheduling-1] INFO  d.z.m.d.scheduler.ScheduledTasks - The time is now 00:23:23
