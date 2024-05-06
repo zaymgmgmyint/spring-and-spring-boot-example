@@ -22,7 +22,7 @@ This project aims to provide hands-on examples and tutorials for mastering Sprin
 
 ## Getting Started
 To get started with the project, follow these steps:
-1. Clone the repository: `https://github.com/ZayMMM/spring-and-spring-boot-example`
+1. Clone the repository: `https://github.com/zaymmm/spring-and-spring-boot-example`
 2. Navigate to the desired subproject directory.
 3. Follow the instructions in the README file of each subproject to set it up and run it.
 
