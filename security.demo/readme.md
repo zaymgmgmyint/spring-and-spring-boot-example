@@ -44,3 +44,6 @@ This project requires the following dependencies:
 - Spring Boot
 - Spring Web
 - Other dependencies may be included based on specific requirement
+
+## Spring Filter Diagram
+![Spring Filter Diagram](https://github.com/zaymaungmaungmyint-dev/spring-and-spring-boot-example/blob/main/security.demo/src/main/resources/spring_filter_example.png)
